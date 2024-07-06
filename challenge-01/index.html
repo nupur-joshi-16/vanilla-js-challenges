@@ -4,6 +4,21 @@
 	<title>challenge-01</title>
 </head>
 <body>
-	<h1>Sample text</h1>
+	<h1>Hello&nbsp;<span id="user-name">World</span>!</h1>
+		
+	<button id="myButton">Click Me</button>
+		
+	<script>
+		let userName = document.getElementById('user-name');
+		//console.log(userName);
+		let userInputBtn = document.getElementById('myButton');
+		//console.log(userInputBtn);
+		
+		function userInput(){
+			userName.textContent = prompt('Please Enter Your Name');
+		}
+		
+		userInputBtn.addEventListener('click', userInput);
+	</script>
 </body>
 </html>
